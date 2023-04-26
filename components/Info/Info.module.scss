@@ -1,0 +1,101 @@
+﻿.container {
+  width: 60%;
+  margin: 0 auto;
+  .info_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap-reverse;
+    .first {
+      display: flex;
+      flex-direction: column;
+      gap: 57px;
+      .one {
+        background-image: url(../../public/second_back.png);
+        gap: 42px;
+        display: flex;
+        flex-direction: column;
+        padding: 85px;
+        width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+        li {
+          display: flex;
+          align-items: center;
+          gap: 41px;
+          list-style: none;
+          font-family: "Gotham Pro";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 160%;
+          color: #000000;
+        }
+      }
+      .two {
+        iframe {
+          width: 660px;
+          height: 387px;
+        }
+      }
+    }
+    .second {
+      h1 {
+        font-family: "Gotham Pro";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 140%;
+        text-transform: uppercase;
+        color: #e31e24;
+      }
+      h3 {
+        padding-top: 12px;
+        font-family: "Gotham Pro";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 140%;
+        text-transform: uppercase;
+        color: #000000;
+      }
+      p {
+        padding-top: 35px;
+        font-family: "Gotham Pro";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 160%;
+        color: #000000;
+      }
+      .under_block {
+        padding-top: 59px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        h1 {
+          font-family: "Gotham Pro";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 140%;
+          letter-spacing: -0.05em;
+          color: #e31e24;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1720px) {
+  .container {
+    .info_block {
+      .first {
+        .one {
+        }
+      }
+    }
+  }
+}
