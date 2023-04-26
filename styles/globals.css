@@ -1,3 +1,28 @@
+@font-face {
+  font-family: 'Gotham Pro';
+  src: local('Gotham Pro Light'), local('Gotham-Pro-Light'),
+      url('../font/GothamPro-Light.woff2') format('woff2'),
+      url('../font/GothamPro-Light.woff') format('woff'),
+      url('../font/GothamPro-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+span,
+li,
+ul,
+input {
+  font-family: 'Gotham Pro';
+}
+
 html {
   box-sizing: border-box;
   font-size: 16px;
