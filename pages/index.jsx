@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import Hero from '@/components/Hero/Hero'
 import DeliveryDetails from '@/components/DeliveryDetails/DeliveryDetails'
+import RecentDeliveries from '@/components/RecentDeliveries/RecentDeliveries'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       </Head>
       {/* <Hero/> */}
       <DeliveryDetails/>
+      <RecentDeliveries/>
     </>
   )
 }

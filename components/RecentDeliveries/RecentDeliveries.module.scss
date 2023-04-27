@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@mixin font-size(
+  $baseSize,
+  $mobileSize: null,
+  $tabletSize: null,
+  $desktopSize: null,
+  $maxWidth: 1200px
+) {
+  font-size: $baseSize;
+
+  @if $mobileSize != null {
+    @media (max-width: 320px) {
+      font-size: $mobileSize;
+    }
+    @media (min-width: 321px) and (max-width: 767px) {
+      font-size: $mobileSize;
+    }
+  }
+
+  @if $tabletSize != null {
+    @media (min-width: 768px) and (max-width: 1023px) {
+      font-size: $tabletSize;
+    }
+  }
+
+  @if $desktopSize != null {
+    @media (min-width: 1024px) and (max-width: $maxWidth) {
+      font-size: $desktopSize;
+    }
+  }
+}
+
+.recent_section {
+  position: relative;
+  max-width: 1140px;
+  width: 100%;
+  margin: 250px auto;
+  .recent_section_title {
+    position: absolute;
+    z-index: 5;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 140%;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    @include font-size(28px, 20px, 23px, 25px);
+    color: #e31e24;
+  }
+  .recent_section__slides {
+    .recent_section__card {
+      max-width: 560px;
+      width: 100%;
+      height: 630px;
+      margin-top: 110px;
+      transition: 0.5s;
+      border-radius: 0px 18px 18px 0px;
+      .recent_section__card_img {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        display: flex;
+        align-items: flex-end;
+        img {
+          position: absolute;
+          z-index: -1;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 18px 0px 0px 0px;
+        }
+        h1 {
+          max-width: 443px;
+          width: 100%;
+          font-style: normal;
+          font-weight: 700;
+          text-align: left;
+          font-size: 32px;
+          line-height: 120%;
+          display: flex;
+          margin-left: 51px;
+          margin-bottom: 43px;
+          letter-spacing: -0.05em;
+          @include font-size(32px, 26px, 27px, 28px);
+          color: #ffffff;
+        }
+      }
+      .recent_section__card_info {
+        height: 330px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 35px 50px 0 50px;
+        background: #f3f5f6;
+        border-radius: 0px 0px 18px 0px;
+        h2 {
+          font-family: "Gotham Pro";
+          font-style: normal;
+          font-weight: 300;
+          font-size: 13px;
+          line-height: 150%;
+          color: #000000;
+        }
+        h1 {
+          font-style: normal;
+          font-weight: 410;
+          font-size: 22px;
+          white-space: nowrap;
+          line-height: 24px;
+          margin-top: 8px;
+          letter-spacing: 0.15em;
+          text-transform: uppercase;
+          @include font-size(22px, 17px, 19px, 21px);
+          color: #000000;
+        }
+        h6 {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 20px;
+          text-transform: uppercase;
+          margin-top: 50px;
+          @include font-size(18px, 15px, 17px, 18px);
+          color: #e31e24;
+        }
+        .recent_section__card_info__block {
+          max-width: 475px;
+          width: 100%;
+          margin-top: 20px;
+          display: flex;
+          justify-content: space-between;
+          .recent_section__card_info__block__title {
+            display: flex;
+            align-items: center;
+            img {
+              margin-right: 10px;
+            }
+            h3 {
+              font-style: normal;
+              font-weight: 700;
+              font-size: 22px;
+              line-height: 150%;
+              color: #8e8e8e;
+              @include font-size(22px, 19px, 20px, 21px);
+            }
+          }
+          h4 {
+            max-width: 160px;
+            width: 100%;
+            font-style: normal;
+            font-weight: 350;
+            font-size: 18px;
+            line-height: 140%;
+            margin-top: 10px;
+            @include font-size(18px, 16px, 16px, 17px);
+            text-align: left;
+            color: #000000;
+          }
+          .recent_section__card_info__block__text {
+            p {
+              max-width: 176px;
+              width: 100%;
+              font-family: "Roboto", sans-serif;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 150%;
+              @include font-size(14px, 12px, 12px, 13px);
+              text-align: right;
+              color: #8e8e8e;
+            }
+          }
+        }
+      }
+    }
+    .recent_section__card:hover{
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .recent_section {
+    padding: 0 2% 0 2%;
+    .recent_section__card {
+      max-width: 100% !important;
+      .recent_section__card_info__block {
+        max-width: 100% !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .recent_section {
+    padding: 0 3% 0 4%;
+    .recent_section__card_img {
+      img {
+        object-fit: cover;
+      }
+    }
+    .recent_section__card_info {
+      padding: 35px 4% 0 4% !important;
+    }
+  }
+}
+
+@media screen  and (max-width: 532px) {
+  .recent_section__card_img{
+    h1{
+      margin-left: 20px !important;
+    }
+  }
+}
