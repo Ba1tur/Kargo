@@ -1,0 +1,160 @@
+﻿.background {
+  padding-top: 126px;
+  padding-bottom: 84px;
+  position: relative;
+  .particle {
+    position: absolute;
+    z-index: -1;
+  }
+  .container {
+    width: 60%;
+    margin: 0 auto;
+    .price {
+      display: flex;
+      flex-direction: column;
+      gap: 65px;
+      .title {
+        display: flex;
+        flex-direction: column;
+        h1 {
+          font-family: "Gotham Pro";
+          font-style: normal;
+          font-weight: 900;
+          font-size: 70px;
+          line-height: 140%;
+          letter-spacing: -0.05em;
+          text-transform: uppercase;
+          color: #e31e24;
+        }
+        p {
+          font-family: "Gotham Pro";
+          font-style: normal;
+          font-weight: 300;
+          font-size: 22px;
+          line-height: 140%;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          color: #000000;
+          span {
+            font-weight: bold;
+          }
+        }
+        .important_block {
+          margin-top: 72px;
+          display: flex;
+          align-items: center;
+          gap: 24px;
+          background: #ffffff;
+          padding: 21px;
+          h3 {
+            font-family: "Gotham Pro";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            color: #000000;
+          }
+        }
+      }
+      .content {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        .block {
+          width: 10%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background: #ffffff;
+          border-radius: 0px 0px 18px 0px;
+          width: 560px;
+          height: 241px;
+          padding: 50px;
+          cursor: pointer;
+          .first {
+            p {
+              font-family: "Gotham Pro";
+              font-style: normal;
+              font-weight: 300;
+              font-size: 13px;
+              line-height: 150%;
+              color: #000000;
+            }
+            h1 {
+              padding-top: 4px;
+              font-family: "Gotham Pro";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 26px;
+              line-height: 29px;
+              letter-spacing: 0.15em;
+              text-transform: uppercase;
+              color: #000000;
+            }
+            div {
+              padding-top: 28px;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              gap: 9px;
+            }
+            div > li {
+              font-family: "Gotham Pro";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 22px;
+              line-height: 150%;
+              color: #8e8e8e;
+              list-style: none;
+            }
+            h3 {
+              padding-top: 19px;
+            }
+          }
+          .second {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            h1 {
+              font-family: "Gotham Pro";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 30px;
+              line-height: 33px;
+              text-align: right;
+              letter-spacing: -0.05em;
+              color: #e31e24;
+            }
+            p {
+              font-family: "Roboto";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 150%;
+              text-align: right;
+              color: #8e8e8e;
+            }
+          }
+        }
+      }
+    }
+    button {
+      font-family: "Gotham Pro";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 140%;
+      letter-spacing: -0.05em;
+      text-transform: uppercase;
+      color: #e31e24;
+      border: none;
+      background: #ffffff;
+      border-radius: 0px 0px 18px 0px;
+      padding: 22px;
+      cursor: pointer;
+    }
+  }
+}
