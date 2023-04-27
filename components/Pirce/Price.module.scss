@@ -63,7 +63,11 @@
         justify-content: center;
         align-items: center;
         gap: 24px;
+        .block:hover {
+          scale: 1.05;
+        }
         .block {
+          transition: 0.3s;
           width: 10%;
           display: flex;
           align-items: center;
@@ -154,7 +158,11 @@
       background: #ffffff;
       border-radius: 0px 0px 18px 0px;
       padding: 22px;
+      transition: 0.3s;
       cursor: pointer;
+    }
+    button:hover {
+      scale: 1.05;
     }
   }
 }

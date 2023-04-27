@@ -23,7 +23,7 @@ const Price = () => {
                                 </h3>
                             </div>
                             <div className={s.tovar}>
-                                
+
                             </div>
                         </div>
                         <div className={s.content}>
