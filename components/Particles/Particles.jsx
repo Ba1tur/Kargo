@@ -1,13 +1,9 @@
-﻿import React, { useEffect, useState } from 'react';
+﻿import React from 'react';
 import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 
 const ParticlesBackground = () => {
-
-    const [particleWidth, setParticleWidth] = useState(0);
-    const [particleHeight, setParticleHeight] = useState(0);
-
     const particlesInit = useCallback(async engine => {
         console.log(engine);
         await loadFull(engine);
@@ -17,19 +13,6 @@ const ParticlesBackground = () => {
         await console.log(container);
     }, []);
 
-    useEffect(() => {
-        const handleResize = () => {
-            if (typeof window !== 'undefined') {
-                setParticleWidth(window.innerWidth);
-                setParticleHeight(window.innerHeight);
-            }
-        };
-        handleResize();
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
-
-
     const particleOptions = {
         "autoPlay": true,
         "background": {
@@ -37,7 +20,7 @@ const ParticlesBackground = () => {
                 "value": "#B3B3B3"
             },
             "image": "",
-            "position": "100% 100%",
+            "position": "50% 50%",
             "repeat": "no-repeat",
             "size": "cover",
             "opacity": 1
@@ -53,8 +36,10 @@ const ParticlesBackground = () => {
             "enable": false
         },
         "defaultThemes": {},
+        "delay": 0,
         "fullScreen": {
             "enable": false,
+            "zIndex": -1
         },
         "detectRetina": true,
         "duration": 0,
@@ -569,17 +554,17 @@ const ParticlesBackground = () => {
         "smooth": true,
         "style": {},
         "themes": [],
-        "zLayers": 100
+        "zLayers": 50
     }
     return (
-        <Particles
-            id="tsparticles"
-            init={particlesInit}
-            loaded={particlesLoaded}
-            options={particleOptions}
-            width={particleWidth}
-            height={particleHeight}
-        />
+        <div>
+            <Particles
+                id="tsparticles"
+                init={particlesInit}
+                loaded={particlesLoaded}
+                options={particleOptions}
+            />
+        </div>
     );
 };
 

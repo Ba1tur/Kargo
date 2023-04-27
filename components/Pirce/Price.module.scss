@@ -1,14 +1,15 @@
 ﻿.background {
-  padding-top: 126px;
-  padding-bottom: 84px;
   position: relative;
   .particle {
     position: absolute;
     z-index: -1;
+    width: 100%;
   }
   .container {
     width: 60%;
     margin: 0 auto;
+    padding-top: 126px;
+    padding-bottom: 84px;
     .price {
       display: flex;
       flex-direction: column;
