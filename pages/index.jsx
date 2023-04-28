@@ -3,6 +3,7 @@ import styles from '@/styles/Home.module.css'
 import Hero from '@/components/Hero/Hero'
 import DeliveryDetails from '@/components/DeliveryDetails/DeliveryDetails'
 import RecentDeliveries from '@/components/RecentDeliveries/RecentDeliveries'
+import ContactUs from '@/components/ContactUs/ContactUs'
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       {/* <Hero/> */}
       <DeliveryDetails/>
       <RecentDeliveries/>
+      <ContactUs/>
     </>
   )
 }

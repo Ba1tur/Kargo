@@ -1,12 +1,3 @@
-/* @font-face {
-  font-family: 'Gotham Pro';
-  src: local('Gotham Pro Light'), local('Gotham-Pro-Light'),
-      url('../font/') format('woff2'),
-      url('../font/GothamPro-Light.woff') format('woff'),
-      url('../font/GothamPro-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-} */
 
 @font-face {
   font-family: 'Gotham Pro';
