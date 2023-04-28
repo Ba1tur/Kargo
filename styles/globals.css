@@ -1,11 +1,49 @@
 @font-face {
-  font-family: 'Gotham Pro';
-  src: local('Gotham Pro Light'), local('Gotham-Pro-Light'),
-      url('../font/GothamPro-Light.woff2') format('woff2'),
-      url('../font/GothamPro-Light.woff') format('woff'),
-      url('../font/GothamPro-Light.ttf') format('truetype');
-  font-weight: 300;
+  font-family: "Gotham Pro";
+  src: url("../font/GothamPro-Bold.eot");
+  src: url("../font/GothamPro-Bold.eot#iefix") format("embedded-opentype"),
+    url("../font/GothamPro-Bold.woff") format("woff"),
+    url("../font/GothamPro-Bold.ttf") format("truetype");
+  font-weight: normal;
   font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("../font/GothamPro-Light.eot");
+  src: url("../font/GothamPro-Light.eot#iefix") format("embedded-opentype"),
+    url("../font/GothamPro-Light.woff") format("woff"),
+    url("../font/GothamPro-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("../font/GothamPro-Medium.eot");
+  src: url("../font/GothamPro-Medium.eot#iefix") format("embedded-opentype"),
+    url("../font/GothamPro-Medium.woff") format("woff"),
+    url("../font/GothamPro-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("../font/GothamPro.eot");
+  src: url("../font/GothamPro.eot#iefix") format("embedded-opentype"),
+    url("../font/GothamPro.woff") format("woff"),
+    url("../font/GothamPro.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
 }
 
 h1,
@@ -20,7 +58,7 @@ span,
 li,
 ul,
 input {
-  font-family: 'Gotham Pro';
+  font-family: "Gotham Pro" , sans-serif;
 }
 
 html {
@@ -28,17 +66,29 @@ html {
   font-size: 16px;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: normal;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
