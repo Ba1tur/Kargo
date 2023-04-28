@@ -7,9 +7,9 @@ const Price = () => {
     return (
         <>
             <div className={s.background}>
-                <div className={s.particle}>
+                {/* <div className={s.particle}>
                     <ParticlesBackground />
-                </div>
+                </div> */}
                 <div className={s.container}>
                     <div className={s.price}>
                         <div className={s.title}>
