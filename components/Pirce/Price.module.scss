@@ -1,11 +1,9 @@
 ﻿.background {
   position: relative;
   background-color: gray;
-  .particle {
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-  }
+  background-image: url(../../public/back.png);
+  background-size: cover;
+  background-attachment: fixed;
   .container {
     width: 60%;
     margin: 0 auto;

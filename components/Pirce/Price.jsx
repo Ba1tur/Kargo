@@ -1,15 +1,11 @@
 ﻿import React from 'react';
 import s from './Price.module.scss'
 import { delivery_price } from '@/constants/constants';
-import ParticlesBackground from '../Particles/Particles';
 
 const Price = () => {
     return (
         <>
             <div className={s.background}>
-                {/* <div className={s.particle}>
-                    <ParticlesBackground />
-                </div> */}
                 <div className={s.container}>
                     <div className={s.price}>
                         <div className={s.title}>
