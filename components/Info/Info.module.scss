@@ -35,9 +35,9 @@
         }
       }
       .two {
-        iframe {
-          width: 660px;
-          height: 387px;
+        video {
+          min-height: 360px;
+          min-width: 360px;
         }
       }
     }
@@ -183,9 +183,9 @@
         .video {
           display: block;
           padding-top: 49px;
-          iframe {
-            width: 360px;
-            height: 211.09px;
+          video {
+            min-width: 360px;
+            min-height: 211.09px;
           }
         }
         p {

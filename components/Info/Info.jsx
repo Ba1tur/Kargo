@@ -14,14 +14,23 @@ const Info = () => {
                             <li> <img src="/money.png" alt="" /> Оплата доставки после получения. <br /> Возможна отсрочка</li>
                         </div>
                         <div className={s.two}>
-                            <iframe width="660" height="387" src="https://www.youtube.com/embed/johcE5s525M?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <video autoPlay controls loop muted style={{
+                                width: '100%',
+                                height: '387px'
+                            }}>
+                                <source src="/video.mp4" type="video/mp4" />
+                            </video>
                         </div>
                     </div>
                     <div className={s.second}>
                         <h1>Antik Kargo</h1>
                         <h3>доставка товаров из <br /> Турции с минимальным <br /> участием с вашей <br /> стороны</h3>
                         <div className={s.video}>
-                            <iframe width="660" height="387" src="https://www.youtube.com/embed/johcE5s525M?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <video autoPlay controls loop muted style={{
+                                width: '100%', height: '100%'
+                            }}>
+                                < source src="/video.mp4" type="video/mp4" />
+                            </video>
                         </div>
                         <p>
                             Ищите компанию, которая организует <br /> доставку грузов из Турции в Россию с <br /> минимальным вмешательством с вашей <br /> стороны?
@@ -46,7 +55,7 @@ const Info = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div >
         </>
     );
 };
