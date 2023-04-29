@@ -2,9 +2,14 @@ import React, { useEffect, useState } from 'react';
 import s from './Header.module.scss'
 import Image from 'next/image';
 import homeLogo from '../../public/homeLogo.png'
+import vk from '../../public/vk.svg'
+import telegram from '../../public/telegram.svg'
+import whatsapp from '../../public/whatsapp.svg'
+import burger from '../../public/burgerMenu.svg'
 
 const Header = () => {
 	const [isVisible, setIsVisible] = useState(false);
+	const [visible, setVisible] = useState(false);
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -21,6 +26,8 @@ const Header = () => {
 		};
 	}, []);
 
+	
+
 	const headerDown = {
 		position: "fixed",
 		top: 0,
@@ -28,10 +35,6 @@ const Header = () => {
 		right: 0,
 		height: "70px",
 		backgroundColor: "#174C73",
-		// boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
-		// display: "flex",
-		// justifyContent: "center",
-		// alignItems: "center",
 		zIndex: 999,
 		transition: "transform 0.3s ease-out",
 		transform: isVisible ? "translateY(0)" : "translateY(-100%)",
@@ -47,19 +50,37 @@ const Header = () => {
 					<div className={s.header__right_block}>
 						<div className={s.header__nav}>
 							<Image src={homeLogo} alt='home_img' />
-							<a href='#'>услуги</a>
-							<a href="#">тарифы</a>
-							<a href="#">онлайн-калькулятор</a>
-							<a href="#">тарифы</a>
-							<a href="#">отзывы</a>
-							<a href="#">контакты</a>
+							<a href='#'>Услуги</a>
+							<a href="#">Tарифы</a>
+							<a href="#">Онлайн-калькулятор</a>
+							<a href="#">Тарифы</a>
+							<a href="#">Отзывы</a>
+							<a href="#">Контакты</a>
 						</div>
 					</div>
 				</div>
 			</header>
 			<header style={headerDown}>
 				<div className={s.header_down_block}>
-
+					<div className={s.header_down_block__nav}>
+						<a href='#'>Услуги</a>
+						<a href="#">Тарифы</a>
+						<a href="#">Онлайн-калькулятор</a>
+						<a href="#">Тарифы</a>
+						<a href="#">Отзывы</a>
+						<a href="#">Контакты</a>
+					</div>
+					<div className={s.header_down_block__burger}>
+						<Image src={burger} alt='burger_menu' />
+					</div>
+					<div className={s.header_down_block__social}>
+						<Image src={vk} alt='vk_img' />
+						<Image src={whatsapp} alt='whatsapp_img' />
+						<Image src={telegram} alt='telegram_img' />
+					</div>
+					<div className={s.header_down_block__number}>
+						<a href="#">+7 916 330 33 05</a>
+					</div>
 				</div>
 			</header>
 

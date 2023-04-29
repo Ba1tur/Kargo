@@ -68,6 +68,7 @@
           left: 0;
           width: 100%;
           height: 100%;
+          object-fit: cover;
           border-radius: 18px 0px 0px 0px;
         }
         h1 {
@@ -134,7 +135,7 @@
             display: flex;
             align-items: center;
             img {
-              margin-right: 10px;
+              margin-right: 10px; 
             }
             h3 {
               font-style: normal;
@@ -174,7 +175,7 @@
         }
       }
     }
-    .recent_section__card:hover{
+    .recent_section__card:hover {
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
   }
@@ -192,6 +193,12 @@
   }
 }
 
+@media screen and (max-width: 761px) {
+  .recent_section {
+    height: 500px !important;
+  }
+}
+
 @media screen and (max-width: 650px) {
   .recent_section {
     padding: 0 3% 0 4%;
@@ -206,9 +213,9 @@
   }
 }
 
-@media screen  and (max-width: 532px) {
-  .recent_section__card_img{
-    h1{
+@media screen and (max-width: 532px) {
+  .recent_section__card_img {
+    h1 {
       margin-left: 20px !important;
     }
   }
