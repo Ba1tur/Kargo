@@ -195,7 +195,7 @@
   }
 }
 
-@media screen and (max-width: 754px) {
+@media screen and (max-width: 756px) {
   .delivery_section {
     padding: 0 3% 0 3%;
     background: none;
@@ -240,6 +240,9 @@
   .delivery_section_statistics__main {
     gap: 70px;
     overflow-x: scroll;
+  }
+  .delivery_section__block{
+    margin-bottom: 200px !important;
   }
 }
 @media screen and (max-width: 560px) {
