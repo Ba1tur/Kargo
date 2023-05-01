@@ -8,7 +8,7 @@ import whatsapp from '../../public/whatsapp.svg'
 const ContactUs = () => {
 	return (
 		<section className={s.contact_us_section}>
-			<iframe src="https://yandex.ru/map-widget/v1/?ll=37.432678%2C55.534125&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgozNDIyNzc4MDQ0EocB0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINC_0L7RgdC10LvQtdC90LjQtSDQktC-0YHQutGA0LXRgdC10L3RgdC60L7QtSwg0LTQtdGA0LXQstC90Y8g0JPQvtGA0L7QtNC40YnQtSwg0K_QvNGB0LrQsNGPINGD0LvQuNGG0LAsIDE3IgoNr7gVQhUnI15C&z=16.49" frameborder="1" allowfullscreen="true"></iframe>
+			<iframe src="https://yandex.ru/map-widget/v1/?ll=74.625022%2C42.937845&mode=search&oid=45011742949&ol=biz&z=16.24" frameborder="1" allowfullscreen="true"></iframe>
 			<div className={s.contact_us_section__wrapper}>
 				<div className={s.contact_us_section__wrapper__block}>
 					<div className={s.contact_us_section__wrapper__block_main}>
