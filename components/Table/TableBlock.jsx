@@ -7,6 +7,7 @@ const columns = [
         title: 'Услуги/Город',
         dataIndex: 'address',
         fixed: 'left',
+        width: '160px',
         render: (text) => <a>{text}</a>,
     },
     {
