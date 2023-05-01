@@ -5,7 +5,6 @@ import DeliveryDetails from '@/components/DeliveryDetails/DeliveryDetails'
 import RecentDeliveries from '@/components/RecentDeliveries/RecentDeliveries'
 import ContactUs from '@/components/ContactUs/ContactUs'
 import Info from '@/components/Info/Info'
-import Price from '@/components/Pirce/Price'
 import TableBlock from '@/components/Table/TableBlock'
 import Customer from '@/components/Customer/Customer'
 
@@ -21,13 +20,8 @@ export default function Home() {
       <Hero />
       <Info />
       <DeliveryDetails />
-      {/* <Price /> */}
       <TableBlock />
       <RecentDeliveries />
-      <ContactUs />
-      <DeliveryDetails/>
-      <Price />
-      <RecentDeliveries/>
       <Customer/>
       <ContactUs/>
     </>

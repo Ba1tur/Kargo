@@ -1,1 +1,33 @@
-﻿
+﻿.container {
+  width: 60%;
+  margin: 0 auto;
+  .table {
+    display: flex;
+    flex-direction: column;
+    h1 {
+      margin-bottom: 70px;
+      align-items: center;
+      display: flex;
+      font-family: "Gotham Pro";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 70px;
+      line-height: 140%;
+      letter-spacing: -0.05em;
+      text-transform: uppercase;
+      color: #e31e24;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 95%;
+  }
+}
