@@ -6,6 +6,7 @@ import RecentDeliveries from '@/components/RecentDeliveries/RecentDeliveries'
 import ContactUs from '@/components/ContactUs/ContactUs'
 import Info from '@/components/Info/Info'
 import Price from '@/components/Pirce/Price'
+import Customer from '@/components/Customer/Customer'
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <DeliveryDetails/>
       <Price />
       <RecentDeliveries/>
+      <Customer/>
       <ContactUs/>
     </>
   )

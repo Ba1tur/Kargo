@@ -23,7 +23,7 @@ const Hero = () => {
 					</div>
 				</div>
 				<div className={s.hero_section__contain_text}>
-					<h1>Карго-доставка товаров из Турции в Россию </h1>
+					<h1>Карго-доставка товаров из Москвы в Россию </h1>
 					<div className={s.hero_section__contain_text__block}>
 						<p>Полный комплекс услуг</p>
 					</div>
