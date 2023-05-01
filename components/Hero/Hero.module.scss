@@ -43,6 +43,10 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      .hero_section__contain_info_logo{
+        width: 260px;
+        height: 80px;
+      }
       .hero_section__contain_info__title {
         h4 {
           font-style: normal;
@@ -135,8 +139,12 @@
         color: #ffffff;
         background: #e31e24;
         border: none;
+        transition: all 0.3s ease;
         border-radius: 15px 0px;
         cursor: pointer;
+      }
+      button:hover{
+        transform: scale(1.1);
       }
     }
   }

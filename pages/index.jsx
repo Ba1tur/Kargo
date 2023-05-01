@@ -7,6 +7,7 @@ import ContactUs from '@/components/ContactUs/ContactUs'
 import Info from '@/components/Info/Info'
 import Price from '@/components/Pirce/Price'
 import TableBlock from '@/components/Table/TableBlock'
+import Customer from '@/components/Customer/Customer'
 
 export default function Home() {
   return (
@@ -24,6 +25,11 @@ export default function Home() {
       <TableBlock />
       <RecentDeliveries />
       <ContactUs />
+      <DeliveryDetails/>
+      <Price />
+      <RecentDeliveries/>
+      <Customer/>
+      <ContactUs/>
     </>
   )
 }

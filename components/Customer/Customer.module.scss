@@ -1,0 +1,36 @@
+.customer_section {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  h1 {
+    line-height: 1.2em;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+	 text-align: center;
+    line-height: 140%;
+	 margin-bottom: 50px;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    color: #e31e24;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+	.customer_section{
+		padding-top: 60px !important;
+		h1{
+			font-size: 50px !important;
+		}
+	}
+}
+
+@media screen and (max-width: 467px) {
+	.customer_section{
+		h1{
+			font-size: 35px !important;
+		}
+	}
+}
