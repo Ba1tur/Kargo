@@ -1,13 +1,79 @@
+.logistic {
+  margin: 0 auto;
+  background-image: url(../../public/mask_bg.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 65vh;
+}
+
 .logistic__bg_img {
   position: relative;
 }
 .logistic__content {
   position: absolute;
-  top: 70px;
+  top: 110px;
   color: #fff;
   text-align: center;
 }
 .logistic__text {
   padding: 25px;
   line-height: 42px;
+  font-size: 18px;
+}
+@media (max-width: 680px) {
+  .logistic__content {
+    position: relative;
+    top: 40px;
+    .logistic__text {
+      font-size: 16px;
+    }
+  }
+}
+@media (max-width: 658px) {
+  .logistic__title {
+    font-size: 20px;
+  }
+  .logistic__text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 614px) {
+  .logistic__title {
+    font-size: 20px;
+  }
+  .logistic__text {
+    font-size: 14px;
+    line-height: 35px;
+  }
+}
+@media (max-width: 549px) {
+  .logistic__title {
+    font-size: 18px;
+  }
+  .logistic__text {
+    font-size: 12px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 517px) {
+  .logistic__text {
+    line-height: 32px;
+    font-size: 14px;
+  }
+  .logistic__title {
+    font-size: 20px;
+  }
+}
+@media (max-width: 463px) {
+  .logistic__text {
+    font-size: 10px;
+  }
+}
+@media (max-width: 376px) {
+  .logistic__content {
+    position: relative;
+    top: 30px;
+  }
 }

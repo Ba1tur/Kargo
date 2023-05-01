@@ -6,12 +6,12 @@ import mask_bg from "../../public/mask_bg.png";
 const Logistic = () => {
   return (
     <div className={classes.logistic}>
-      <Image
+      {/* <Image
         className={classes.logistic__bg_img}
         src={mask_bg}
-        height={450}
+        // height={450}
         alt="logistic"
-      />
+      /> */}
       <div className={classes.logistic__content}>
         <h2 className={classes.logistic__title}>
           Профессиональная логистика за обоснованную цену

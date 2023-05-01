@@ -12,21 +12,15 @@ import group from "../../public/group.png";
 const Services = () => {
   return (
     <div className={classes.services__block}>
-      {/* <Image src={backgr} height={510} alt="bg" className={classes.bg} /> */}
       <div className={classes.services}>
-        <div
-          className={classNames(
-            classes.services__content_first,
-            "service__row"
-          )}
-        >
-          <div className={classes.services__left}>
+        <div className={classNames(classes.services__content)}>
+          <div className={classes.services__item}>
             <div className={classes.services__img}>
               <Image
                 className={classes.card__img}
                 src={clock}
-                width={70}
-                height={70}
+                width={90}
+                height={90}
                 alt="clock"
               />
             </div>
@@ -36,13 +30,13 @@ const Services = () => {
               </p>
             </div>
           </div>
-          <div className={classes.services__center}>
+          <div className={classes.services__item}>
             <div className={classes.services__img}>
               <Image
                 className={classes.card__img}
                 src={mask}
-                width={70}
-                height={70}
+                width={90}
+                height={90}
                 alt="clock"
               />
             </div>
@@ -52,13 +46,13 @@ const Services = () => {
               </p>
             </div>
           </div>
-          <div className={classes.services__right}>
+          <div className={classes.services__item}>
             <div className={classes.services__img}>
               <Image
                 className={classes.card__img}
                 src={mask1}
-                width={70}
-                height={70}
+                width={90}
+                height={90}
                 alt="clock"
               />
             </div>
@@ -68,20 +62,14 @@ const Services = () => {
               </p>
             </div>
           </div>
-        </div>
-        <div
-          className={classNames(
-            classes.services__content_second,
-            "service__row"
-          )}
-        >
-          <div className={classes.services__left}>
+
+          <div className={classes.services__item}>
             <div className={classes.services__img}>
               <Image
                 className={classes.card__img}
                 src={image42}
-                width={70}
-                height={70}
+                width={90}
+                height={90}
                 alt="clock"
               />
             </div>
@@ -91,13 +79,13 @@ const Services = () => {
               </p>
             </div>
           </div>
-          <div className={classes.services__center}>
+          <div className={classes.services__item}>
             <div className={classes.services__img}>
               <Image
                 className={classes.card__img}
                 src={group1}
-                width={70}
-                height={70}
+                width={90}
+                height={90}
                 alt="clock"
               />
             </div>
@@ -107,13 +95,13 @@ const Services = () => {
               </p>
             </div>
           </div>
-          <div className={classes.services__right}>
+          <div className={classes.services__item}>
             <div className={classes.services__img}>
               <Image
                 className={classes.card__img}
                 src={group}
-                width={70}
-                height={70}
+                width={90}
+                height={90}
                 alt="clock"
               />
             </div>
