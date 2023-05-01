@@ -6,6 +6,7 @@ import RecentDeliveries from '@/components/RecentDeliveries/RecentDeliveries'
 import ContactUs from '@/components/ContactUs/ContactUs'
 import Info from '@/components/Info/Info'
 import Price from '@/components/Pirce/Price'
+import TableBlock from '@/components/Table/TableBlock'
 
 export default function Home() {
   return (
@@ -16,12 +17,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/static/favicon.ico" />
       </Head>
-      <Hero/>
+      <Hero />
       <Info />
-      <DeliveryDetails/>
-      <Price />
-      <RecentDeliveries/>
-      <ContactUs/>
+      <DeliveryDetails />
+      {/* <Price /> */}
+      <TableBlock />
+      <RecentDeliveries />
+      <ContactUs />
     </>
   )
 }
