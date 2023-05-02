@@ -9,7 +9,6 @@ const ContactUs = () => {
 	return (
 		<section id='directions' className={s.contact_us_section}>
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46782.68009709711!2d74.4935407486328!3d42.874585300000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec97018d7de53%3A0x2d90a14cd613b8f4!2z0KDRi9C90L7QuiDQtNC-0YDQtNC-0Lk!5e0!3m2!1sru!2skg!4v1683036979996!5m2!1sru!2skg" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-			{/* <iframe src="https://yandex.ru/maps/10309/bishkek/?utm_medium=mapframe&utm_source=maps" frameborder="1" allowfullscreen="true"></iframe> */}
 			<div className={s.contact_us_section__wrapper}>
 				<div className={s.contact_us_section__wrapper__block}>
 					<div className={s.contact_us_section__wrapper__block_main}>
