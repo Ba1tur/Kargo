@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import s from './Hero.module.scss'
 import logo from '../../public/company_logo.png'
 import Image from 'next/image';
 import instagram from '../../public/instagramm.svg'
 import whatsapp from '../../public/whatssapp.svg'
 import facebook from '../../public/facebook.svg'
+import Burger from "../BurgerMenu/BurgerMenu";
+import SideBar from "../Sidebar/Sidebar";
+import { motion } from 'framer-motion'
 
 const Hero = () => {
+	const [openMenu, setOpenMenu] = useState(true);
+
+	// Состояние - для header (для цвета)
+	const [isHeaderActive, setIsHeaderActive] = useState(false);
+
+	// Состояние - для burger menu
+	const [showNav, setShowNav] = useState(false);
 	return (
 		<main className={s.hero_section}>
 			<div className={s.hero_section__contain}>
@@ -35,7 +45,9 @@ const Hero = () => {
 					</div>
 				</div>
 				<div className={s.hero_section__contain__request}>
-					<button>ОТПРАВИТЬ ЗАЯВКУ</button>
+					<a href="https://wa.me/966703153009?text=Здравствуйте,%20я%20хочу%20отправить%20заявку">
+						<button>ОТПРАВИТЬ ЗАЯВКУ</button>
+					</a>
 				</div>
 			</div>
 		</main>

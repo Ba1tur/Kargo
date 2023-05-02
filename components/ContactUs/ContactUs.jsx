@@ -23,11 +23,13 @@ const ContactUs = () => {
 						<a href='tel: +996-708-815-888'>заказать звонок</a>
 						<h5>info@antikkargo.ru</h5>
 						<div className={s.contact_us_section__wrapper__block_main__social}>
-							<Image src={instagram} alt='vk_img'/>
-							<Image src={whatsapp} alt='whatsapp_img'/>
-							<Image src={facebook} alt='telegram_img'/>
+							<Image src={instagram} alt='vk_img' />
+							<Image src={whatsapp} alt='whatsapp_img' />
+							<Image src={facebook} alt='telegram_img' />
 						</div>
-						<button>задать вопрос</button>
+						<a href="https://wa.me/966703153009?text=Здравствуйте,%20я%20хочу%20задать%20вопрос">
+							<button>задать вопрос</button>
+						</a>
 					</div>
 				</div>
 			</div>
