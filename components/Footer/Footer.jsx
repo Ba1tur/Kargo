@@ -27,7 +27,7 @@ const Footer = () => {
 	}
 
 	return (
-		<footer className={s.footer}>
+		<footer id='contacts' className={s.footer}>
 			<div className={s.footer__politics}>
 				<a href="#">Политика конфиденциальности</a>
 				<a href="#">Публичный договор-оферта</a>
@@ -38,28 +38,13 @@ const Footer = () => {
 				</button>
 			)}
 			<div className={s.footer__contacts}>
-				<h1>Наши контакты в других городах:</h1>
+				<h1>Наши контакты городах:</h1>
 				<div className={s.footer__contacts__blocks}>
 					<div className={s.footer__contacts__block}>
-						<a href="">Стамбул: +9 0 (533) 031 3596</a> <br />
-						<a href="">Москва: +7 (916) 330 3305</a> <br />
-						<a href="">Красноярск: +7 (902) 990 74 53</a> <br />
-						<a href="">Иркутск: +7 (902) 560 80 05</a> <br />
-						<a href="">Якутск: +7 (914) 296 97 23</a>
-					</div>
-					<div className={s.footer__contacts__block}>
-						<a href="">Казань: +7 (903) 387 78 71</a> <br />
-						<a href="">Омск: +7 913 657-80-00</a> <br />
-						<a href="">Ростов-на-Дону: +7 928 126-66-01</a> <br />
-						<a href="">Екатеринбург: +7 963 449-99-93</a> <br />
-						<a href="">Краснодар: +7 928 420-66-70</a>
-					</div>
-					<div className={s.footer__contacts__block}>
-						<a href="">Оренбург: +7 912 348 - 68 - 99</a> <br />
-						<a href="">Крым: +7 978 723 - 79 - 81</a> <br />
-						<a href="">Ульяновск: +7 951 095 - 90 - 83</a> <br />
-						<a href="">Челябинск: +7 919 115 - 88-00</a> <br />
-						<a href="">Новосибирск: +7 913 923 - 67 - 67</a>
+						<a href='tel: +7-915-333-23-78'>Москва: +7 915 333 - 23 - 78</a> <br />
+						<a href='tel: +7-987-408-97-27'>Казань: +7 987 408 - 97 - 27</a> <br />
+						<a href='tel: +7-927-766-99-14'>Самара: +7 927 766 - 99 - 14</a> <br />
+						<a href='tel: +7-928-346-00-01'>Пятигорск: +7 928 346 - 00 - 01</a> <br />
 					</div>
 				</div>
 			</div>

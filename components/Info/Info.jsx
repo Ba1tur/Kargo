@@ -8,8 +8,8 @@ const Info = () => {
                 <div className={s.info_block}>
                     <div className={s.first}>
                         <div className={s.one}>
-                            <li> <img src="/transport.png" alt="" /> Доставка авиа и <br />
-                                автомобильным транспортом</li>
+                            <li> <img src="/transport.png" alt="" /> Доставка  
+                                автомобильным <br /> транспортом</li>
                             <li> <img src="/map.png" alt="" /> Безопасные и оптимальные маршруты <br /> с минимальной стоимостью</li>
                             <li> <img src="/money.png" alt="" /> Оплата доставки после получения.</li>
                         </div>
@@ -23,8 +23,8 @@ const Info = () => {
                         </div>
                     </div>
                     <div className={s.second}>
-                        <h1>Antik Kargo</h1>
-                        <h3>доставка товаров из <br /> из Кыргызстана в <br />  Самару,  Казань, <br /> Пятигорск с  <br /> минимальным участием с <br />  вашей  стороны</h3>
+                        <h1>Damla<span style={{color: 'red'}}>Rus</span></h1>
+                        <h3>доставка товаров из <br /> из Кыргызстана в города <br /> Росси - <br /> <span style={{color: 'red' , fontWeight: 'bold'}}>Москва</span>  <br /> <span style={{color: 'red' , fontWeight: 'bold'}}>Самара</span> , <br /> <span style={{color: 'red' , fontWeight: 'bold'}}>Казань</span>  , <br /> <span style={{color: 'red' , fontWeight: 'bold'}}>Пятигорск</span>  с   минимальным <br /> участием с   вашей  стороны</h3>
                         <div className={s.video}>
                             <video autoPlay controls loop muted style={{
                                 width: '100%', height: '100%'
@@ -33,7 +33,7 @@ const Info = () => {
                             </video>
                         </div>
                         <p>
-                            Ищите компанию, которая организует <br /> доставку грузов из Турции в Россию с <br /> минимальным вмешательством с вашей <br /> стороны?
+                            Ищите компанию, которая организует <br /> доставку грузов из Кыргызстана в Россию с <br /> минимальным вмешательством с вашей <br /> стороны?
                             <br />
                             <br />
                             Вы попали точно по адресу! Мы возьмем на <br /> себя все заботы об отправке, доставке, <br /> сохранности <br /> вашего груза.
@@ -42,7 +42,7 @@ const Info = () => {
                             Огромный опыт и собственная <br /> инфраструктура позволяют нам выстроить <br /> маршруты доставки с лучшей ценой на <br /> рынке, а также гарантировать сохранность <br /> грузов и соблюдение сроков доставки.
                         </p>
                         <div className={s.under_block}>
-                           
+
                             <h1>
                                 5 000 довольных
                                 <br />

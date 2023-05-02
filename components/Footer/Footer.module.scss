@@ -70,14 +70,14 @@
       height: 109px;
       margin-top: 53px;
       display: flex;
-      flex-wrap: wrap;
+      // justify-content: center;
       .footer__contacts__block {
-        width: 33%;
+        width: 44%;
         height: 109px;
         a {
           font-style: normal;
-          font-weight: 400;
-          font-size: 12px;
+          font-weight: 410;
+          font-size: 15px;
           line-height: 180%;
           text-decoration: none;
           color: #000000;

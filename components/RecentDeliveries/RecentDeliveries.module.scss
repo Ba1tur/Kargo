@@ -117,14 +117,19 @@
         }
         h6 {
           font-style: normal;
-          font-weight: 400;
-          font-size: 18px;
+          font-weight: 410;
+          font-size: 20px;
           line-height: 20px;
           text-transform: uppercase;
           margin-top: 50px;
           @include font-size(18px, 15px, 17px, 18px);
-          color: #e31e24;
+          color: #000000;
+          a {
+            text-decoration: none;
+            color: red;
+          }
         }
+
         .recent_section__card_info__block {
           max-width: 475px;
           width: 100%;
@@ -135,7 +140,7 @@
             display: flex;
             align-items: center;
             img {
-              margin-right: 10px; 
+              margin-right: 10px;
             }
             h3 {
               font-style: normal;
@@ -147,16 +152,19 @@
             }
           }
           h4 {
-            max-width: 160px;
+            max-width: 190px;
             width: 100%;
             font-style: normal;
-            font-weight: 350;
+            font-weight: 400;
             font-size: 18px;
             line-height: 140%;
             margin-top: 10px;
             @include font-size(18px, 16px, 16px, 17px);
             text-align: left;
             color: #000000;
+            span{
+              color: red;
+            }
           }
           .recent_section__card_info__block__text {
             p {

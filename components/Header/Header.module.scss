@@ -97,12 +97,13 @@
     }
   }
   .header_down_block__social {
-    width: 110px;
+    width: 140px;
     display: flex;
     justify-content: space-between;
     img {
-      width: 24px;
-      height: 24px;
+      width: 38px;
+      height: 38px;
+      cursor: pointer;
     }
   }
   .header_down_block__number {

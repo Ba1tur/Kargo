@@ -56,7 +56,7 @@ const SideBar = ({ showNav, setShowNav, openMenu, setOpenMenu }) => {
           whileHover={{ scale: 1.1, transition: "0.4s" }}
         >
           <a href="#" onClick={handleClick}>
-            Онлайн-калькулятор
+            Наши партнеры и клиенты
           </a>
         </motion.li>
         <motion.li
@@ -66,17 +66,7 @@ const SideBar = ({ showNav, setShowNav, openMenu, setOpenMenu }) => {
           whileHover={{ scale: 1.1, transition: "0" }}
         >
           <a href="#" onClick={handleClick}>
-            Тарифы
-          </a>
-        </motion.li>
-        <motion.li
-          initial={{ y: -10, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.2, duration: 1 }}
-          whileHover={{ scale: 1.1, transition: "0.4s" }}
-        >
-          <a href="#" onClick={handleClick}>
-            Отзывы
+            Направление
           </a>
         </motion.li>
         <motion.li

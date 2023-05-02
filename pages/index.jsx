@@ -21,15 +21,15 @@ export default function Home() {
       <Hero />
       <Info />
       <DeliveryDetails />
-      {/* <Price /> */}
+      <Price />
       <TableBlock />
       <RecentDeliveries />
-      <ContactUs />
-      <DeliveryDetails/>
-      <Price />
-      <RecentDeliveries/>
       <Customer/>
-      <ContactUs/>
+      <ContactUs />
+      {/* <DeliveryDetails/> */}
+      {/* <Price /> */}
+      {/* <RecentDeliveries/> */}
+      {/* <ContactUs/> */}
     </>
   )
 }

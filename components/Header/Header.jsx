@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 import s from './Header.module.scss'
 import Image from 'next/image';
 import homeLogo from '../../public/homeLogo.png'
-import vk from '../../public/vk.svg'
-import telegram from '../../public/telegram.svg'
-import whatsapp from '../../public/whatsapp.svg'
+import instagram from '../../public/instagramm.svg'
+import whatsapp from '../../public/whatssapp.svg'
+import facebook from '../../public/facebook.svg'
 import burger from '../../public/burgerMenu.svg'
 import { motion } from 'framer-motion'
 import Burger from "../BurgerMenu/BurgerMenu";
@@ -38,7 +38,16 @@ const Header = () => {
 		};
 	}, []);
 
-
+	useEffect(() => {
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault();
+				document.querySelector(this.getAttribute('href')).scrollIntoView({
+					behavior: 'smooth'
+				});
+			});
+		});
+	}, [])
 
 	const headerDown = {
 		position: "fixed",
@@ -56,18 +65,17 @@ const Header = () => {
 			<header className={s.header}>
 				<div className={s.header_block}>
 					<div className={s.header__left_block}>
-						<h3>+7 916 330 33 05</h3>
-						<a>заказать звонок</a>
+						<h3>+996 708 815 888</h3>
+						<a href='tel: +996-708-815-888'>заказать звонок</a>
 					</div>
 					<div className={s.header__right_block}>
 						<div className={s.header__nav}>
 							<Image src={homeLogo} alt='home_img' />
-							<a href='#'>Услуги</a>
-							<a href="#">Tарифы</a>
-							<a href="#">Онлайн-калькулятор</a>
-							<a href="#">Тарифы</a>
-							<a href="#">Отзывы</a>
-							<a href="#">Контакты</a>
+							<a href='#services'>Услуги</a>
+							<a href="#tariffs">Tарифы</a>
+							<a href="#partners">Наши партнеры и клиенты</a>
+							<a href="#directions">Направление</a>
+							<a href="#contacts">Контакты</a>
 						</div>
 					</div>
 				</div>
@@ -75,15 +83,13 @@ const Header = () => {
 			<header style={headerDown}>
 				<div className={s.header_down_block}>
 					<div className={s.header_down_block__nav}>
-						<a href='#'>Услуги</a>
-						<a href="#">Тарифы</a>
-						<a href="#">Онлайн-калькулятор</a>
-						<a href="#">Тарифы</a>
-						<a href="#">Отзывы</a>
-						<a href="#">Контакты</a>
+						<a href='#services'>Услуги</a>
+						<a href="#tariffs">Тарифы</a>
+						<a href="#partners">Наши партнеры и клиенты</a>
+						<a href="#directions">Направление</a>
+						<a href="#contacts">Контакты</a>
 					</div>
 					<div className={s.header_down_block__burger}>
-						{/* <Image src={burger} alt='burger_menu' /> */}
 						<motion.div
 							className={s.burgerMenu}
 							initial={{ opacity: 0 }}
@@ -161,12 +167,18 @@ const Header = () => {
 						</motion.div>
 					</div>
 					<div className={s.header_down_block__social}>
-						<Image src={vk} alt='vk_img' />
-						<Image src={whatsapp} alt='whatsapp_img' />
-						<Image src={telegram} alt='telegram_img' />
+						<a href="https://instagram.com/damlarus_cargo?igshid=YmMyMTA2M2Y=">
+							<Image src={instagram} />
+						</a>
+						<a href="https://wa.me/0703153009?text=Привет,%20как%20дела?">
+							<Image src={whatsapp} />
+						</a>
+						<a href="https://www.facebook.com/people/%D0%93%D1%83%D0%BB%D1%8C%D0%B7%D0%B0%D0%BD%D0%B0-%D0%9A%D0%B0%D1%82%D0%BA%D0%B5%D0%BB%D0%B4%D0%B8%D0%B5%D0%B2%D0%B0/pfbid0PwKgsnqC1Rs9vCgkcRbQF3ca1U7hggDzhN68Wqe5CN7BNN9csMNHjTaj7NLiHfznl/?sk=about">
+							<Image src={facebook} />
+						</a>
 					</div>
 					<div className={s.header_down_block__number}>
-						<a href="#">+7 916 330 33 05</a>
+						<a href="https://wa.me/996703153009?text=Привет,%20как%20дела">+996 703 153 009 (W/A)</a>
 					</div>
 				</div>
 			</header>

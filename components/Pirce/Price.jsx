@@ -5,7 +5,7 @@ import { delivery_price } from '@/constants/constants';
 const Price = () => {
     return (
         <>
-            <div className={s.background}>
+            <div id='tariffs' className={s.background}>
                 <div className={s.container}>
                     <div className={s.price}>
                         <div className={s.title}>

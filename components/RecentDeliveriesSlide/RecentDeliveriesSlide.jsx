@@ -1,6 +1,6 @@
 import React from 'react';
 import s from '../RecentDeliveries/RecentDeliveries.module.scss'
-import { Swiper, SwiperSlide  } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Autoplay } from "swiper";
 import manwithbox from '../../public/manWithBox.png'
 import folding from '../../public/folding.png'
@@ -13,19 +13,19 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 SwiperCore.use([Autoplay]);
-import { Pagination, Navigation  } from "swiper";
+import { Pagination, Navigation } from "swiper";
 import Image from 'next/image';
 
-const RecentDeliveriesSlide = ({recentData}) => {
+const RecentDeliveriesSlide = ({ recentData }) => {
 	console.log(recentData);
 	return (
 		<div>
 			<Swiper
 				pagination={true}
-				modules={[Pagination, Navigation ]}
+				modules={[Pagination, Navigation]}
 				speed={1200}
 				spaceBetween={20}
-				autoplay={{delay: 2000}}
+				autoplay={{ delay: 2000 }}
 				className="myRecentSwiper"
 				breakpoints={{
 					1080: {
@@ -43,25 +43,25 @@ const RecentDeliveriesSlide = ({recentData}) => {
 						<SwiperSlide>
 							<div className={s.recent_section__card}>
 								<div className={s.recent_section__card_img}>
-									<Image src={manwithbox} alt='man_img' />
+									<Image src={item.img} width={0} height={0} alt='man_img' />
 									<h1>{item.imgTitle}</h1>
 								</div>
 								<div className={s.recent_section__card_info}>
-									<h2>перевозка груза</h2>
-									<h1>Стамбул → {item.title}</h1>
+									{/* <h2>перевозка груза</h2> */}
+									<h1>Адрес: г.{item.adress}</h1>
 									<div className={s.recent_section__card_info__block}>
 										<div>
 											<div className={s.recent_section__card_info__block__title}>
-												<Image src={miniAirplane} alt='airplane' />
-												<h3>{item.typeDelivery}</h3>
+												<Image src={miniCar} alt='airplane' />
+												<h3>АВТО</h3>
 											</div>
-											<h4>Срок доставки: {item.day} дней</h4>
+											<h4>Цена доставки: <br /> от <span>{item.priceStart} </span>до <span>{item.priceEnd}</span></h4>
 										</div>
 										<div className={s.recent_section__card_info__block__text}>
 											<p>{item.text}</p>
 										</div>
 									</div>
-									<h6>Стоимость доставки - {item.price}</h6>
+									<h6>Номер телефона : <a href={item.link}>{item.number}</a> </h6>
 								</div>
 							</div>
 						</SwiperSlide>
