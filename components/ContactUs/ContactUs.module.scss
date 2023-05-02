@@ -142,6 +142,9 @@
 }
 
 @media screen and (max-width: 760px) {
+  .contact_us_section{
+    height: 1000px;
+  }
   .contact_us_section__wrapper {
     align-items: flex-start !important;
     height: 589px !important;
