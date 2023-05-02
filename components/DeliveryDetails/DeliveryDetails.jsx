@@ -95,25 +95,27 @@ const DeliveryDetails = () => {
 							<p>Одежда</p>
 						</div>
 						<div className={s.delivery_section_statistics__main_card}>
-							<Image style={{width: '62px'}} src={carService} alt='сlothes_img' />
+							<Image style={{ width: '62px' }} src={carService} alt='сlothes_img' />
 							<h4>20%</h4>
 							<p>Автозапчасти</p>
 						</div>
 						<div className={s.delivery_section_statistics__main_card}>
-							<Image src={shoes} alt='сlothes_img' />
-							<h4>15%</h4>
-							<p>Обувь</p>
+							<Image style={{ width: '62px' }} src={bucket} alt='сlothes_img' />
+							<h4>5%</h4>
+							<p>Стройматериалы</p>
 						</div>
+
 						<div className={s.delivery_section_statistics__main_card}>
 							<Image src={towel} alt='сlothes_img' />
 							<h4>5%</h4>
 							<p>Постельное <br /> белье и <br /> ткани</p>
 						</div>
 						<div className={s.delivery_section_statistics__main_card}>
-							<Image style={{width: '62px'}} src={bucket} alt='сlothes_img' />
-							<h4>5%</h4>
-							<p>Стройматериалы</p>
+							<Image src={shoes} alt='сlothes_img' />
+							<h4>15%</h4>
+							<p>Обувь</p>
 						</div>
+
 					</div>
 				</div>
 			</div>

@@ -29,8 +29,8 @@ const Footer = () => {
 	return (
 		<footer id='contacts' className={s.footer}>
 			<div className={s.footer__politics}>
-				<a href="#">Политика конфиденциальности</a>
-				<a href="#">Публичный договор-оферта</a>
+				<p>Политика конфиденциальности</p>
+				<p>Публичный договор-оферта</p>
 			</div>
 			{visible && (
 				<button onClick={scrollToTop} className={s.footer__btn_up}>

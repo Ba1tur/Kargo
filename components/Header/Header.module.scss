@@ -91,7 +91,6 @@
     max-width: 300px;
     width: 100%;
     display: none;
-    // flex: 0 0 auto;
     img{
       cursor: pointer;
     }
@@ -129,7 +128,7 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1085px) {
   .header_down_block__nav{
     display: none !important;
   }

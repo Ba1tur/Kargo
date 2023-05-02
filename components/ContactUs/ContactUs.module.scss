@@ -146,8 +146,10 @@
     align-items: flex-start !important;
     height: 589px !important;
     background: #ffffff;
+    padding: 0 !important;
     .contact_us_section__wrapper__block {
       width: 100% !important;
+      padding: 0 2% 0 2%;
       .contact_us_section__wrapper__block_main {
         max-width: 100% !important;
         margin: 0 !important;
@@ -158,7 +160,7 @@
 }
 
 @media screen and (max-width: 610px) {
-  .contact_us_section__wrapper {
+  .contact_us_section__wrapper__block {
     padding: 0 4% 0 4% !important;
   }
 }

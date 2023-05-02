@@ -58,7 +58,7 @@ span,
 li,
 ul,
 input {
-  font-family: 'Gotham Pro';
+  font-family: "Gotham Pro";
 }
 
 html {
@@ -95,9 +95,5 @@ ul {
 img {
   max-width: 100%;
   height: auto;
-}
-
-::-webkit-scrollbar {
-  display: none;
 }
 

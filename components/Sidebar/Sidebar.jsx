@@ -35,7 +35,7 @@ const SideBar = ({ showNav, setShowNav, openMenu, setOpenMenu }) => {
           transition={{ delay: 0.2, duration: 1.7 }}
           whileHover={{ scale: 1.1, transition: "0.4s" }}
         >
-          <a href="#" onClick={handleClick}>
+          <a href="#services" onClick={handleClick}>
             Услуги
           </a>
         </motion.li>
@@ -45,7 +45,7 @@ const SideBar = ({ showNav, setShowNav, openMenu, setOpenMenu }) => {
           transition={{ delay: 0.2, duration: 1.5 }}
           whileHover={{ scale: 1.1, transition: "0.4s" }}
         >
-          <a href="#" onClick={handleClick}>
+          <a href="#tariffs" onClick={handleClick}>
             Тарифы
           </a>
         </motion.li>
@@ -55,7 +55,7 @@ const SideBar = ({ showNav, setShowNav, openMenu, setOpenMenu }) => {
           transition={{ delay: 0.2, duration: 1.4 }}
           whileHover={{ scale: 1.1, transition: "0.4s" }}
         >
-          <a href="#" onClick={handleClick}>
+          <a href="#partners" onClick={handleClick}>
             Наши партнеры и клиенты
           </a>
         </motion.li>
@@ -65,7 +65,7 @@ const SideBar = ({ showNav, setShowNav, openMenu, setOpenMenu }) => {
           transition={{ delay: 0.2, duration: 1.2 }}
           whileHover={{ scale: 1.1, transition: "0" }}
         >
-          <a href="#" onClick={handleClick}>
+          <a href="#directions" onClick={handleClick}>
             Направление
           </a>
         </motion.li>
@@ -75,7 +75,7 @@ const SideBar = ({ showNav, setShowNav, openMenu, setOpenMenu }) => {
           transition={{ delay: 0.2, duration: 1 }}
           whileHover={{ scale: 1.1, transition: "0.4s" }}
         >
-          <a href="#" onClick={handleClick}>
+          <a href="#contacts" onClick={handleClick}>
             Контакты
           </a>
         </motion.li>
