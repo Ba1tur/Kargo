@@ -1,3 +1,7 @@
+// import Head from "next/head";
+// import styles from "@/styles/Home.module.css";
+import Logistic from "@/components/Logistic/Logistic";
+import Services from "@/components/Services/Services";
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import Hero from '@/components/Hero/Hero'
@@ -53,11 +57,12 @@ export default function Home() {
       <Hero />
       <Info />
       <DeliveryDetails />
-      {/* <Price /> */}
+      <Services />
       <TableBlock />
+      <Logistic />
       <RecentDeliveries />
       <Customer />
       <ContactUs />
     </>
-  )
+  );
 }
