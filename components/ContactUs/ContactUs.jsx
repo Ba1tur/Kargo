@@ -33,7 +33,7 @@ const ContactUs = () => {
 								<Image src={facebook} />
 							</a>
 						</div>
-						<a href="https://wa.me/966703153009?text=Здравствуйте,%20я%20хочу%20задать%20вопрос">
+						<a href="https://wa.me/9660703153009?text=Здравствуйте,%20я%20хочу%20задать%20вопрос">
 							<button>задать вопрос</button>
 						</a>
 					</div>
