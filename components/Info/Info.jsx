@@ -24,7 +24,7 @@ const Info = () => {
                     </div>
                     <div className={s.second}>
                         <h1>Damla<span style={{color: 'red'}}>Rus</span></h1>
-                        <h3>доставка товаров из <br /> из Кыргызстана в города <br /> Росси - <br /> <span style={{color: 'red' , fontWeight: 'bold'}}>Москва</span>  <br /> <span style={{color: 'red' , fontWeight: 'bold'}}>Самара</span> , <br /> <span style={{color: 'red' , fontWeight: 'bold'}}>Казань</span>  , <br /> <span style={{color: 'red' , fontWeight: 'bold'}}>Пятигорск</span>  с   минимальным <br /> участием с   вашей  стороны</h3>
+                        <h3>доставка товаров из <br /> из Кыргызстана в города <br /> России - <br /> <span style={{color: 'red' , fontWeight: 'bold'}}>Москва</span>  <br /> <span style={{color: 'red' , fontWeight: 'bold'}}>Самара</span> , <br /> <span style={{color: 'red' , fontWeight: 'bold'}}>Казань</span>  , <br /> <span style={{color: 'red' , fontWeight: 'bold'}}>Пятигорск</span>  с   минимальным <br /> участием с   вашей  стороны</h3>
                         <div className={s.video}>
                             <video autoPlay controls loop muted style={{
                                 width: '100%', height: '100%'

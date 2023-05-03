@@ -6,7 +6,7 @@ import "swiper/css/pagination";
 import aurotur from '../../public/aerotour (1).png'
 import bika from '../../public/bikatour (3).png'
 import kodor from '../../public/kodor.png'
-import shumkar from '../../public/shumkar.png'
+import shumkar from '../../public/shumkark.jpg'
 import Image from 'next/image';
 import s from './CustomerSlide.module.scss'
 
@@ -21,9 +21,7 @@ const CustomerSlide = () => {
 					disableOnInteraction: false,
 				}}
 				slidesPerView={4}
-				// spaceBetween={10}
 				grabCursor={true}
-
 				pagination={{
 					clickable: true,
 				}}

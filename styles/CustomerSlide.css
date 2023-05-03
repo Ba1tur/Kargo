@@ -17,7 +17,7 @@
 
 .CustomerSlideSwiper .swiper-slide img {
   display: block;
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
+  width: 260px;
+  height: 230px;
+  /* object-fit: cover; */
 }

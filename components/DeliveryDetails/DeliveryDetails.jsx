@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './DeliveryDetails.module.scss'
-import train from '../../public/trainback.jpg'
-import trainRide from '../../public/trainRide.jpg'
+import service from '../../public/service.jpg'
+import save from '../../public/save.jpg'
 import сlothes from '../../public/clothes.svg'
 import outerwear from '../../public/outerwear.svg'
 import shoes from '../../public/shoes.svg'
@@ -18,62 +18,27 @@ const DeliveryDetails = () => {
 			<div className={s.delivery_section__block}>
 				<div className={s.delivery_section__cards}>
 					<div className={s.delivery_section__cards__title}>
-						<h1>КАКИЕ   УСЛУГИ</h1>
-						<h2>мы <br /> Предоставляем</h2>
+						<h1>НАШИ  УСЛУГИ</h1>
 					</div>
 					<div className={s.delivery_section_main}>
 						<div className={s.delivery_card}>
-							<Image className={s.delivery_card_img} src={train} alt='airplane_img' />
+							<Image className={s.delivery_card_img} src={service} alt='airplane_img' />
 							<div className={s.delivery_card_price}>От 35 руб/кг</div>
 							<div className={s.delivery_card__main}>
-								<h2>Мы Компания</h2>
-								<h3>Мы компания, доставляющая товары автогрузом для города России, гарантируя быструю и надежную доставку по доступной цене.</h3>
-								{/* <h2>Авиаперевозки </h2>
-								<h3>Срок доставки: от 2 дней</h3>
-								<div style={{ display: 'flex', marginTop: '12px', alignItems: 'center' }}>
-									<Image src={check} alt='check' />
-									<p>Самый быстрый способ  доставки</p>
-								</div>
-								<div style={{ display: 'flex', marginTop: '17px', alignItems: 'center' }}>
-									<Image src={check} alt='check' />
-									<p>Минимальные риски  порчи груза</p>
-								</div> */}
+								<h2>Складское хранение</h2>
+								<h3>ответственное хранение товара на складе</h3>
+								<h3>ответственное хранение мелкоштучных товаров</h3>
+								<h3>прямая перегрузка товаров из а/м в а/м, перегрузка через склад</h3>
 							</div>
 						</div>
-						{/* <div className={s.delivery_card}>
-							<Image className={s.delivery_card_img} src={train} alt='airplane_img' />
-							<div className={s.delivery_card_price}>От 6,8 $/кг</div>
-							<div className={s.delivery_card__main}>
-								<h2>Авиа + авто перевозки  </h2>
-								<h3>Срок доставки: от 10 дней</h3>
-								<div style={{ display: 'flex', marginTop: '12px', alignItems: 'center' }}>
-									<Image src={check} alt='check' />
-									<p>Оптимальное соотношение  цена/качество по стоимости и  надежности</p>
-								</div>
-								<div style={{ display: 'flex', marginTop: '17px', alignItems: 'center' }}>
-									<Image src={check} alt='check' />
-									<p>Разработано специально для  удаленных регионов</p>
-								</div>
-							</div>
-						</div> */}
 						<div className={s.delivery_card}>
-							<Image className={s.delivery_card_img} src={trainRide} alt='airplane_img' />
+							<Image className={s.delivery_card_img} src={save} alt='airplane_img' />
 							<div className={s.delivery_card_price}>От 35 руб/кг</div>
 							<div className={s.delivery_card__main}>
-								<h2>Мы - профессиональная компания</h2>
-								<h3>Мы гарантируем безопасную доставку и страхование грузов, оперативно реагируем на потребности клиентов с помощью собственного автопарка.</h3>
-								{/* <h3>Мы гарантируем безопасность и сохранность груза на протяжении всего маршрута доставки, а также предоставляем услуги по страхованию грузов. Мы ценим каждого клиента и готовы предложить индивидуальный подход и высокий уровень сервиса.</h3> */}
-								{/* <h3>по доставке товаров автогрузом, предоставляющая услуги по доставке различных грузов в пределах города и по всей стране.</h3> */}
-								{/* <h2>Автомобильные  перевозки</h2>
-								<h3>Срок доставки: от 14 дней</h3>
-								<div style={{ display: 'flex', marginTop: '12px', alignItems: 'center' }}>
-									<Image src={check} alt='check' />
-									<p>Самая низкая цена</p>
-								</div>
-								<div style={{ display: 'flex', marginTop: '17px', alignItems: 'center' }}>
-									<Image src={check} alt='check' />
-									<p>Подходит для регулярной  доставки больших объемов  товара</p>
-								</div> */}
+								<h2>Складские услуги</h2>
+								<h3>выполнение всех погрузо-разгрузочных работ</h3>
+								<h3>маркировка, палетирование, упаковка грузов</h3>
+								<h3>сортировка и комплектация заказов на наших складских площадях</h3>
 							</div>
 						</div>
 					</div>
@@ -115,7 +80,6 @@ const DeliveryDetails = () => {
 							<h4>15%</h4>
 							<p>Обувь</p>
 						</div>
-
 					</div>
 				</div>
 			</div>

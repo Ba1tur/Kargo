@@ -2,9 +2,6 @@ import React from 'react';
 import s from '../RecentDeliveries/RecentDeliveries.module.scss'
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Autoplay } from "swiper";
-import manwithbox from '../../public/manWithBox.png'
-import folding from '../../public/folding.png'
-import miniAirplane from '../../public/miniAirplane.svg'
 import miniCar from '../../public/miniCar.svg'
 
 import "swiper/swiper.min.css";
@@ -21,11 +18,18 @@ const RecentDeliveriesSlide = ({ recentData }) => {
 	return (
 		<div>
 			<Swiper
-				pagination={true}
+				loop
 				modules={[Pagination, Navigation]}
 				speed={1200}
 				spaceBetween={20}
-				autoplay={{ delay: 2000 }}
+				autoplay={{
+					delay: 1000,
+					disableOnInteraction: false,
+				}}
+				grabCursor={true}
+				pagination={{
+					clickable: true,
+				}}
 				className="myRecentSwiper"
 				breakpoints={{
 					1080: {
