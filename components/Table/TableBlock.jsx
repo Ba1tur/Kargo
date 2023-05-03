@@ -24,39 +24,46 @@ const columns = [
     },
     {
         title: 'Пятигорск',
-        dataIndex: 'price',
+        dataIndex: 'price2',
     },
 ];
+
 const data = [
     {
         key: '1',
         price: '35 руб',
         address: 'Пошив',
+        price2: '45руб'
     },
     {
         key: '2',
         price: '45 руб',
         address: 'Китай и маркировка',
+        price2: '55руб'
     },
     {
         key: '3',
         price: '50 руб',
         address: 'Запчасти',
+        price2: '55руб'
     },
     {
         key: '4',
         price: '55 руб',
         address: 'Турция и бренд',
+        price2: '60руб'
     },
     {
         key: '5',
         price: '55 руб',
         address: 'Обувь',
+        price2: '60руб'
     },
     {
         key: '6',
         price: '1 м куб / 100$',
         address: 'Обьемные',
+        price2: '45руб'
     },
 ];
 const TableBlock = () => {
