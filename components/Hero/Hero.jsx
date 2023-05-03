@@ -45,7 +45,7 @@ const Hero = () => {
 					</div>
 				</div>
 				<div className={s.hero_section__contain__request}>
-					<a href="https://wa.me/966703153009?text=Здравствуйте,%20я%20хочу%20отправить%20заявку">
+					<a href="https://wa.me/9660703153009?text=Здравствуйте,%20я%20хочу%20отправить%20заявку">
 						<button>ОТПРАВИТЬ ЗАЯВКУ</button>
 					</a>
 				</div>
