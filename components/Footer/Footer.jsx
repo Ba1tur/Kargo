@@ -35,7 +35,7 @@ const Footer = () => {
 				</button>
 			)}
 			<div className={s.footer__contacts}>
-				<h1>Наши контакты городах россии:</h1>
+				<h1>Наши контакты в городах россии:</h1>
 				<div className={s.footer__contacts__blocks}>
 					<div className={s.footer__contacts__block}>
 						<a href='tel: +7-915-333-23-78'>Москва: +7 915 333 - 23 - 78</a> <br />

@@ -25,7 +25,7 @@ const Header = () => {
 
 	useEffect(() => {
 		const handleScroll = () => {
-			if (window.pageYOffset > 300 || window.innerWidth < 720) {
+			if (window.pageYOffset > 300) {
 				setIsVisible(true);
 			} else {
 				setIsVisible(false);
@@ -60,6 +60,7 @@ const Header = () => {
 		transition: "transform 0.3s ease-out",
 		transform: isVisible ? "translateY(0)" : "translateY(-100%)",
 	}
+
 
 	
 	return (

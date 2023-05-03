@@ -3,7 +3,7 @@ import s from "./Sidebar.module.scss";
 import cl from "classnames";
 import { motion } from "framer-motion";
 
-const SideBar = ({ showNav, setShowNav, openMenu, setOpenMenu }) => {
+const SideBar = ({ showNav, setShowNav, openMenu, setOpenMenu , style}) => {
   const handleClick = () => {
     setShowNav(!showNav), setOpenMenu(!openMenu);
   };
@@ -26,6 +26,7 @@ const SideBar = ({ showNav, setShowNav, openMenu, setOpenMenu }) => {
         stiffness: 500,
       }}
       transition={{ delay: 0, duration: 0.5 }}
+      style={style}
       className={s.show ? cl(s.sideNav, s.show) : s.sideNav}
     >
       <ul>
