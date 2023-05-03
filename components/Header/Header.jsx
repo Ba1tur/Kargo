@@ -60,12 +60,16 @@ const Header = () => {
 		transition: "transform 0.3s ease-out",
 		transform: isVisible ? "translateY(0)" : "translateY(-100%)",
 	}
+
+	
 	return (
 		<>
 			<header className={s.header}>
 				<div className={s.header_block}>
 					<div className={s.header__left_block}>
-						<h3>+996 708 815 888</h3>
+						<a href="tel: +996-708-815-888">
+							<h3>+996 708 815 888</h3>
+						</a>
 						<a href='tel: +996-708-815-888'>заказать звонок</a>
 					</div>
 					<div className={s.header__right_block}>

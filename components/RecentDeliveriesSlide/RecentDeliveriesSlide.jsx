@@ -20,7 +20,7 @@ const RecentDeliveriesSlide = ({ recentData }) => {
 			<Swiper
 				loop
 				modules={[Pagination, Navigation]}
-				speed={1200}
+				speed={2500}
 				spaceBetween={20}
 				autoplay={{
 					delay: 1000,
@@ -51,7 +51,6 @@ const RecentDeliveriesSlide = ({ recentData }) => {
 									<h1>{item.imgTitle}</h1>
 								</div>
 								<div className={s.recent_section__card_info}>
-									{/* <h2>перевозка груза</h2> */}
 									<h1>Адрес: г.{item.adress}</h1>
 									<div className={s.recent_section__card_info__block}>
 										<div>

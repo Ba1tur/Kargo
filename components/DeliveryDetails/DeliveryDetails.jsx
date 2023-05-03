@@ -23,22 +23,20 @@ const DeliveryDetails = () => {
 					<div className={s.delivery_section_main}>
 						<div className={s.delivery_card}>
 							<Image className={s.delivery_card_img} src={service} alt='airplane_img' />
-							<div className={s.delivery_card_price}>От 35 руб/кг</div>
 							<div className={s.delivery_card__main}>
 								<h2>Складское хранение</h2>
-								<h3>ответственное хранение товара на складе</h3>
-								<h3>ответственное хранение мелкоштучных товаров</h3>
-								<h3>прямая перегрузка товаров из а/м в а/м, перегрузка через склад</h3>
+								<h3>Ответственное хранение товара на складе</h3>
+								<h3>Ответственное хранение мелкоштучных товаров</h3>
+								<h3>Прямая перегрузка товаров из а/м в а/м, перегрузка через склад</h3>
 							</div>
 						</div>
 						<div className={s.delivery_card}>
 							<Image className={s.delivery_card_img} src={save} alt='airplane_img' />
-							<div className={s.delivery_card_price}>От 35 руб/кг</div>
 							<div className={s.delivery_card__main}>
 								<h2>Складские услуги</h2>
-								<h3>выполнение всех погрузо-разгрузочных работ</h3>
-								<h3>маркировка, палетирование, упаковка грузов</h3>
-								<h3>сортировка и комплектация заказов на наших складских площадях</h3>
+								<h3>Выполнение всех погрузо-разгрузочных работ</h3>
+								<h3>Маркировка, палетирование, упаковка грузов</h3>
+								<h3>Сортировка и комплектация заказов на наших складских площадях</h3>
 							</div>
 						</div>
 					</div>
@@ -69,7 +67,6 @@ const DeliveryDetails = () => {
 							<h4>5%</h4>
 							<p>Стройматериалы</p>
 						</div>
-
 						<div className={s.delivery_section_statistics__main_card}>
 							<Image src={towel} alt='сlothes_img' />
 							<h4>5%</h4>
