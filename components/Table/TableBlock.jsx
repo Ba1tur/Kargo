@@ -30,27 +30,27 @@ const columns = [
 const data = [
     {
         key: '1',
-        price: '32 руб',
+        price: '35 руб',
         address: 'Пошив',
     },
     {
         key: '2',
-        price: '42 руб',
+        price: '45 руб',
         address: 'Китай и маркировка',
     },
     {
         key: '3',
-        price: '32 руб',
+        price: '50 руб',
         address: 'Запчасти',
     },
     {
         key: '4',
-        price: '939 руб',
+        price: '55 руб',
         address: 'Турция и бренд',
     },
     {
         key: '5',
-        price: '29 руб',
+        price: '55 руб',
         address: 'Обувь',
     },
     {
