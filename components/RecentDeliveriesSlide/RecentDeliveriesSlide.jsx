@@ -51,7 +51,6 @@ const RecentDeliveriesSlide = ({ recentData }) => {
 									<h1>{item.imgTitle}</h1>
 								</div>
 								<div className={s.recent_section__card_info}>
-									<h1>Адрес: г.{item.adress}</h1>
 									<div className={s.recent_section__card_info__block}>
 										<div>
 											<div className={s.recent_section__card_info__block__title}>
@@ -64,6 +63,7 @@ const RecentDeliveriesSlide = ({ recentData }) => {
 											<p>{item.text}</p>
 										</div>
 									</div>
+									<h1>Адрес:<span>{item.adress}</span></h1>
 									<h6>Номер телефона : <a href={item.link}>{item.number}</a> </h6>
 								</div>
 							</div>

@@ -28,17 +28,14 @@ const Footer = () => {
 
 	return (
 		<footer id='contacts' className={s.footer}>
-			<div className={s.footer__politics}>
-				<p>Политика конфиденциальности</p>
-				<p>Публичный договор-оферта</p>
-			</div>
+			<div className={s.footer__politics}></div>
 			{visible && (
 				<button onClick={scrollToTop} className={s.footer__btn_up}>
 					↑     наверх     ↑
 				</button>
 			)}
 			<div className={s.footer__contacts}>
-				<h1>Наши контакты городах:</h1>
+				<h1>Наши контакты городах россии:</h1>
 				<div className={s.footer__contacts__blocks}>
 					<div className={s.footer__contacts__block}>
 						<a href='tel: +7-915-333-23-78'>Москва: +7 915 333 - 23 - 78</a> <br />

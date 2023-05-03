@@ -23,9 +23,15 @@ const ContactUs = () => {
 						<a href='tel: +996-708-815-888'>заказать звонок</a>
 						<h5>info@antikkargo.ru</h5>
 						<div className={s.contact_us_section__wrapper__block_main__social}>
-							<Image src={instagram} alt='vk_img' />
-							<Image src={whatsapp} alt='whatsapp_img' />
-							<Image src={facebook} alt='telegram_img' />
+							<a href="https://instagram.com/damlarus_cargo?igshid=YmMyMTA2M2Y=">
+								<Image src={instagram} />
+							</a>
+							<a href="https://wa.me/9960703153009?text=Здраствуйте,%20у%20меня%20есть%20вопрос">
+								<Image src={whatsapp} />
+							</a>
+							<a href="https://www.facebook.com/people/DamlaRus-cargo-service/100092214619555/">
+								<Image src={facebook} />
+							</a>
 						</div>
 						<a href="https://wa.me/966703153009?text=Здравствуйте,%20я%20хочу%20задать%20вопрос">
 							<button>задать вопрос</button>
