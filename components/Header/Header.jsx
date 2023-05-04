@@ -62,7 +62,7 @@ const Header = () => {
 	}
 
 
-	
+
 	return (
 		<>
 			<header className={s.header}>
@@ -88,7 +88,7 @@ const Header = () => {
 						initial={{ opacity: 0 }}
 						whileInView={{ opacity: 1 }}
 						transition={{ duration: 0.5 }}
-						onClick={() => setShowNav(!showNav)}
+						onClick={() => setShowNav(!showNav) || setIsVisible(true)}
 					>
 						<Burger
 							openMenu={openMenu}
