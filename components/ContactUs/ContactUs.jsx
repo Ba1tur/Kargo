@@ -20,8 +20,10 @@ const ContactUs = () => {
 							пн-вс, 00:00-23:59</p>
 						<h3>Телефон:</h3>
 						<h4>+996 708 815 888</h4>
-						<a href='tel: +996-708-815-888'>заказать звонок</a>
-						<h5>info@antikkargo.ru</h5>
+						<a className={s.phone} href='tel: +996-708-815-888'>заказать звонок</a>
+						<div style={{marginTop: '30px'}}>
+							<a className={s.link} href='https://www.damlarus.com/'>DamlaRus.com</a>
+						</div>
 						<div className={s.contact_us_section__wrapper__block_main__social}>
 							<a href="https://instagram.com/damlarus_cargo?igshid=YmMyMTA2M2Y=">
 								<Image src={instagram} />

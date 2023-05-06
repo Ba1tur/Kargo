@@ -77,7 +77,7 @@
           letter-spacing: -0.05em;
           color: #000000;
         }
-        a {
+        .phone {
           font-style: normal;
           font-weight: 400;
           font-size: 16px;
@@ -85,11 +85,10 @@
           text-decoration-line: underline;
           color: #e31e24;
         }
-        h5 {
+        .link {
           font-style: normal;
           font-weight: 400;
           font-size: 16px;
-          margin-top: 40px;
           line-height: 15px;
           text-decoration-line: underline;
 
@@ -125,7 +124,7 @@
           border-radius: 15px 0px;
           cursor: pointer;
         }
-        button:hover{
+        button:hover {
           transform: scale(1.1);
         }
       }
@@ -142,7 +141,7 @@
 }
 
 @media screen and (max-width: 760px) {
-  .contact_us_section{
+  .contact_us_section {
     height: 1000px;
   }
   .contact_us_section__wrapper {
